@@ -53,15 +53,20 @@
 
 4. Adjunte tabla de tiempos e interprete por qué la función tarda tando tiempo.
 
-   (Las imagenes estan adjuntas arriba) Bien se nos explica que es una aplicación que no esta optimizada para ser rapida y mientras mayor sea la peticion, el tiempo aumentara, junto a esto el poder de procesamiento de la VM es relativamente pequeño.
-
-5. Adjunte imágen del consumo de CPU de la VM e interprete por qué la función consume esa cantidad de CPU.
+   ![tiempo  - fibonacci](https://github.com/franciscoMarquezBocanegra/lab-09/assets/98216991/dbe7584f-3aac-4263-a09d-3fd3b3b7fbaf)
 
    
 
+   (Las imagenes estan adjuntas arriba) Bien se nos explica que es una aplicación que no esta optimizada para ser rapida y mientras mayor sea la peticion, el tiempo aumentara, junto a esto el poder de procesamiento de la VM es relativamente pequeño.
+
+6. Adjunte imágen del consumo de CPU de la VM e interprete por qué la función consume esa cantidad de CPU.
+
+   ![arsw](https://github.com/franciscoMarquezBocanegra/lab-09/assets/98216991/097c157c-5470-4927-9d92-9ce99dc88c7e)
+
+
     El consumo es grando debido a que es una petición grande y la maquina tiene poca memoria para el procesamiento de la cpu
 
-6. Adjunte la imagen del resumen de la ejecución de Postman. Interprete:
+7. Adjunte la imagen del resumen de la ejecución de Postman. Interprete:
     * Tiempos de ejecución de cada petición.
     * Si hubo fallos documentelos y explique.
     
@@ -75,13 +80,13 @@
       
     
     
-7. ¿Cuál es la diferencia entre los tamaños `B2ms` y `B1ls` (no solo busque especificaciones de infraestructura)?
+8. ¿Cuál es la diferencia entre los tamaños `B2ms` y `B1ls` (no solo busque especificaciones de infraestructura)?
 
    La diferencia entre los tamaños B2ms y B1ls en Azure no se encuentra solo en las especificaciones de infraestructura, sino que también se diferencian en la capacidad de procesamiento y rendimiento que ofrecen.
 
       El tamaño B2ms es una instancia de VM que se encuentra en la serie B de Azure. Esta instancia tiene una capacidad de procesamiento mayor que la instancia B1ls, lo que significa que puede manejar cargas de trabajo más grandes y complejas. Además, ofrece más memoria RAM y núcleos de CPU que la instancia B1ls, lo que se traduce en una mejor capacidad de procesamiento y un mejor rendimiento para las aplicaciones que se ejecutan en ella.
    
-8. ¿Aumentar el tamaño de la VM es una buena solución en este escenario?, ¿Qué pasa con la FibonacciApp cuando cambiamos el tamaño de la VM?
+9. ¿Aumentar el tamaño de la VM es una buena solución en este escenario?, ¿Qué pasa con la FibonacciApp cuando cambiamos el tamaño de la VM?
 
     Aumentar el tamaño de la VM puede ser una buena solución en algunos escenarios, dependiendo de la naturaleza de la carga de trabajo y los recursos requeridos por la aplicación. Si la aplicación requiere más recursos de procesamiento y memoria para funcionar correctamente, aumentar el tamaño de la VM puede ayudar a mejorar el rendimiento y la capacidad de la aplicación para manejar una mayor cantidad de solicitudes.
 
@@ -89,7 +94,7 @@
 
    Lo que pasa con FibonacciApp al cambiar el tamaño de la VM es que la maquina virtual no se vera afectada si se realizan varias peteciones ya que tiene los recursos para correr las peticiones.
 
-9. ¿Qué pasa con la infraestructura cuando cambia el tamaño de la VM? ¿Qué efectos negativos implica?
+10. ¿Qué pasa con la infraestructura cuando cambia el tamaño de la VM? ¿Qué efectos negativos implica?
 
    Reinicio de la VM: En algunos casos, puede ser necesario reiniciar la VM para aplicar los cambios de tamaño. Esto puede provocar una interrupción en el servicio.
 
@@ -97,7 +102,7 @@
 
    Cambio en el costo: A medida que se aumenta el tamaño de la VM, también aumenta el costo de la solución. Esto puede ser una consideración importante a la hora de evaluar la escalabilidad de la aplicación.
 
-10. ¿Hubo mejora en el consumo de CPU o en los tiempos de respuesta? Si/No ¿Por qué?
+11. ¿Hubo mejora en el consumo de CPU o en los tiempos de respuesta? Si/No ¿Por qué?
 
    Solo Hubo mejoria en el consumo de la CPU ya que para eso se aumento el tamaño del disco, para aumentar el poder de procesamiento.
       
